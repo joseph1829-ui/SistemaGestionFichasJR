@@ -14,13 +14,13 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="594.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="cr.ac.una.sistemagestionfichasjr.controller.MenuInicialViewController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="594.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.sistemagestionfichasjr.controller.MenuInicialViewController">
     <stylesheets>
         <URL value="@/styles/StyleMenu.css" />
     </stylesheets>
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7f8f8" height="349.0" layoutX="109.0" layoutY="39.0" stroke="#e6e4e4" strokeType="INSIDE" width="386.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="43.0" layoutY="-5.0" strokeType="INSIDE" width="608.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7f8f8" height="354.0" layoutX="108.0" layoutY="37.0" stroke="#e6e4e4" strokeType="INSIDE" width="386.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="43.0" layoutY="-5.0" stroke="#fffffff2" strokeType="INSIDE" width="608.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -37,22 +37,6 @@
                </stops>
             </LinearGradient>
          </fill>
-         <stroke>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.4099999964237213" green="0.437333345413208" blue="0.8199999928474426" opacity="0.6497461795806885" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.4050000011920929" green="0.4387499988079071" blue="0.8100000023841858" opacity="0.9517767429351807" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </stroke>
       </Rectangle>
       <Button layoutX="204.0" layoutY="147.0" mnemonicParsing="false" opacity="0.8" prefHeight="43.0" prefWidth="191.0" style="-fx-background-color: #6F62C4;" text="⚙ Acceso Administrador" textAlignment="CENTER" textFill="WHITE">
          <font>
@@ -105,7 +89,7 @@
       </Button>
       <ImageView fitHeight="64.0" fitWidth="103.0" layoutX="253.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../../Downloads/Logo.png" />
+            <Image url="@../resource/Logo.png" />
          </image>
       </ImageView>
       <Label layoutX="14.0" layoutY="10.0" text=" Pantalla de Acceso Inicial" textFill="WHITE">

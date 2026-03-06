@@ -19,7 +19,7 @@
         <URL value="@Styles.css" />
     </stylesheets>
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f3f3" height="308.0" layoutX="158.0" layoutY="33.0" stroke="#c6cdd2" strokeType="INSIDE" width="288.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="308.0" layoutX="158.0" layoutY="34.0" stroke="#ede5e5" strokeType="INSIDE" width="288.0" />
       <Button alignment="CENTER" layoutX="255.0" layoutY="275.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #6F62C4;" text="Iniciar sesión" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
          <font>
             <Font name="Arial Rounded MT Bold" size="12.0" />
@@ -38,7 +38,7 @@
       </Label>
       <ImageView fitHeight="39.0" fitWidth="123.0" layoutX="270.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../../Downloads/ChatGPT%20Image%201%20mar%202026,%2010_42_09%20p.m..png" />
+            <Image url="@../resource/Letters.png" />
          </image>
       </ImageView>
       <Label alignment="BASELINE_CENTER" contentDisplay="TOP" layoutX="277.0" layoutY="62.0" prefHeight="39.0" prefWidth="108.0" text="Bienvenido A" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
@@ -48,11 +48,11 @@
       </Label>
       <ImageView fitHeight="67.0" fitWidth="93.0" layoutX="198.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../../Downloads/Logo.png" />
+            <Image url="@../resource/Logo.png" />
          </image>
       </ImageView>
       <TextField layoutX="225.0" layoutY="162.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="39.0" layoutY="-4.0" stroke="#6f62c4" strokeType="INSIDE" width="600.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="39.0" layoutY="-3.0" stroke="WHITE" strokeType="INSIDE" width="600.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -63,13 +63,13 @@
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="0.4243333339691162" green="0.3799999952316284" blue="0.7599999904632568" />
+                        <Color red="0.42352941632270813" green="0.3803921639919281" blue="0.7607843279838562" />
                      </color>
                   </Stop>
                </stops>
             </LinearGradient>
          </fill></Rectangle>
-      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="7.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de sesión">
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="9.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de sesión">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
