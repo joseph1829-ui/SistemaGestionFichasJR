@@ -7,46 +7,72 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.sistemagestionfichasjr.controller.LoginViewController">
     <stylesheets>
         <URL value="@Styles.css" />
     </stylesheets>
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f3f3" height="291.0" layoutX="189.0" layoutY="45.0" stroke="#c6cdd2" strokeType="INSIDE" width="227.0" />
-      <Button layoutX="255.0" layoutY="268.0" mnemonicParsing="false" style="-fx-background-color: #4784BF;" text="Iniciar sesión" textAlignment="CENTER" textFill="WHITE">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f3f3" height="308.0" layoutX="154.0" layoutY="33.0" stroke="#c6cdd2" strokeType="INSIDE" width="288.0" />
+      <Button layoutX="255.0" layoutY="273.0" mnemonicParsing="false" style="-fx-background-color: #6F62C4;" text="Iniciar sesión" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Arial Rounded MT Bold" size="12.0" />
          </font>
       </Button>
-      <TextField layoutX="229.0" layoutY="215.0" />
-      <Label layoutX="230.0" layoutY="145.0" text="Usuario:">
+      <TextField layoutX="225.0" layoutY="216.0" />
+      <Label layoutX="230.0" layoutY="147.0" text="Usuario:">
          <font>
             <Font name="Arial Rounded MT Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="230.0" layoutY="196.0" text="Contraseña:">
+      <Label layoutX="230.0" layoutY="201.0" text="Contraseña:">
          <font>
             <Font name="Arial Rounded MT Bold" size="12.0" />
          </font>
       </Label>
-      <ImageView fitHeight="43.0" fitWidth="157.0" layoutX="222.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="115.0" layoutX="278.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../../../../../Downloads/ChatGPT%20Image%201%20mar%202026,%2010_42_09%20p.m..png" />
          </image>
       </ImageView>
-      <Label layoutX="251.0" layoutY="67.0" text="Bienvenido A" textAlignment="CENTER">
+      <Label alignment="BASELINE_CENTER" contentDisplay="TOP" layoutX="281.0" layoutY="62.0" prefHeight="39.0" prefWidth="108.0" text="Bienvenido A" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
          <font>
             <Font name="Arial Rounded MT Bold" size="15.0" />
          </font>
       </Label>
-      <ImageView fitHeight="51.0" fitWidth="72.0" layoutX="23.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="67.0" fitWidth="93.0" layoutX="202.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../../Downloads/42be52da-2cd6-4686-8f77-f547f25e3112.png" />
+            <Image url="@../../../../../../../../../../Downloads/Logo.png" />
          </image>
       </ImageView>
-      <TextField layoutX="228.0" layoutY="160.0" />
+      <TextField layoutX="225.0" layoutY="162.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="39.0" layoutY="-4.0" stroke="#6f62c4" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4124999940395355" green="0.375" blue="0.75" opacity="0.6852791905403137" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4243333339691162" green="0.3799999952316284" blue="0.7599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="7.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de sesión">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
