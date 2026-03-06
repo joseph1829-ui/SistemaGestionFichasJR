@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.sistemagestionfichasjr.controller.LoginViewController">
+    <stylesheets>
+        <URL value="@Styles.css" />
+    </stylesheets>
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f3f3" height="291.0" layoutX="189.0" layoutY="45.0" stroke="#c6cdd2" strokeType="INSIDE" width="227.0" />
+      <Button layoutX="255.0" layoutY="268.0" mnemonicParsing="false" style="-fx-background-color: #4784BF;" text="Iniciar sesión" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField layoutX="229.0" layoutY="215.0" />
+      <Label layoutX="230.0" layoutY="145.0" text="Usuario:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="196.0" text="Contraseña:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="43.0" fitWidth="157.0" layoutX="222.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/ChatGPT%20Image%201%20mar%202026,%2010_42_09%20p.m..png" />
+         </image>
+      </ImageView>
+      <Label layoutX="251.0" layoutY="67.0" text="Bienvenido A" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="72.0" layoutX="23.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/42be52da-2cd6-4686-8f77-f547f25e3112.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="228.0" layoutY="160.0" />
+   </children>
+</AnchorPane>
