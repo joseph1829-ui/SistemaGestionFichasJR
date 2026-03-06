@@ -4,8 +4,6 @@ module cr.ac.una.sistemagestionfichasjr {
     requires java.base;
 
     opens cr.ac.una.sistemagestionfichasjr to javafx.fxml;
-    
     opens cr.ac.una.sistemagestionfichasjr.controller to javafx.fxml;
-
     exports cr.ac.una.sistemagestionfichasjr;
 }
