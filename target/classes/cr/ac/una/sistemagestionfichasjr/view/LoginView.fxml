@@ -4,6 +4,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,69 +22,67 @@
         <URL value="@Styles.css" />
     </stylesheets>
    <children>
-      <ImageView fitHeight="401.0" fitWidth="616.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="401.0" fitWidth="616.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../resource/BackGroundInicioSesion.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="308.0" layoutX="167.0" layoutY="48.0" opacity="0.9" stroke="#cea8a8" strokeType="INSIDE" width="272.0">
+
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="312.0" layoutX="176.0" layoutY="40.0" opacity="0.4" strokeType="INSIDE" width="248.0">
          <fill>
-            <LinearGradient endX="1.0" endY="1.0" startX="0.4763407090484908" startY="0.5488958990536278">
+            <LinearGradient endX="0.7634069400630915" endY="1.0" startX="1.0" startY="0.48580440437004013">
+               <stops>
+                  <Stop>
+                     <color><Color red="1.0" green="1.0" blue="1.0" opacity="0.8999999761581421" /></color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color><Color red="1.0" green="1.0" blue="1.0" opacity="0.5" /></color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="0.6246056661996933" endY="0.3343848813595456" startX="0.9274448009695541" startY="0.1482649601596387">
                <stops>
                   <Stop>
                      <color>
-                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.9060913920402527" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.006711409395973154">
-                     <color>
-                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.9060913920402527" />
+                        <Color opacity="0.04568527638912201" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.5025380253791809" />
+                        <Color red="1.0" green="1.0" blue="1.0" />
                      </color>
                   </Stop>
                </stops>
             </LinearGradient>
-         </fill></Rectangle>
-      <Button alignment="CENTER" layoutX="253.0" layoutY="286.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #6F62C4;" text="Iniciar sesión" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         </stroke>
+      </Rectangle>
+
+      <Button contentDisplay="TOP" layoutX="253.0" layoutY="289.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" styleClass="button-primary" text="Iniciar sesión" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+
+      <TextField layoutX="219.0" layoutY="241.0" styleClass="text-field-login">
+         <effect><Lighting><bumpInput><Shadow /></bumpInput><light><Light.Distant /></light></Lighting></effect>
+      </TextField>
+
+      <TextField layoutX="219.0" layoutY="183.0" styleClass="text-field-login">
+         <effect><Lighting><bumpInput><Shadow /></bumpInput><light><Light.Distant /></light></Lighting></effect>
+      </TextField>
+
+      <Label layoutX="225.0" layoutY="167.0" opacity="0.6" styleClass="label-bold" text="Usuario:">
          <font>
-            <Font name="Arial Rounded MT Bold" size="12.0" />
-         </font>
-      </Button>
-      <TextField layoutX="225.0" layoutY="221.0" opacity="0.5" />
-      <Label layoutX="225.0" layoutY="148.0" text="Usuario:">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="12.0" />
-         </font>
-      </Label>
-      <Label layoutX="225.0" layoutY="204.0" text="Contraseña:">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="12.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="39.0" fitWidth="123.0" layoutX="270.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../resource/Letters.png" />
-         </image>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="225.0" layoutY="224.0" opacity="0.6" styleClass="label-bold" text="Contraseña:" />
+      <Label alignment="CENTER" layoutX="277.0" layoutY="55.0" prefHeight="39.0" prefWidth="108.0" styleClass="label-welcome" text="Bienvenido A" />
+
+      <ImageView fitHeight="39.0" fitWidth="123.0" layoutX="267.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@../resource/Letters.png" /></image>
       </ImageView>
-      <Label alignment="BASELINE_CENTER" contentDisplay="TOP" layoutX="277.0" layoutY="65.0" prefHeight="39.0" prefWidth="108.0" text="Bienvenido A" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="15.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="67.0" fitWidth="93.0" layoutX="198.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../resource/Logo.png" />
-         </image>
+      <ImageView fitHeight="67.0" fitWidth="93.0" layoutX="198.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@../resource/Logo.png" /></image>
       </ImageView>
-      <TextField layoutX="225.0" layoutY="164.0" opacity="0.5" />
-      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="23.0" opacity="0.75" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicia Sesión" wrappingWidth="94.00000000000023">
-         <font>
-            <Font name="Britannic Bold" size="15.0" />
-         </font>
-      </Text>
+
+      <Text fill="WHITE" layoutX="246.0" layoutY="147.0" opacity="0.48" styleClass="text-header" text="Iniciar Sesión" />
    </children>
 </AnchorPane>
