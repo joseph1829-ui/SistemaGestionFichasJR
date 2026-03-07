@@ -30,13 +30,13 @@
 
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="312.0" layoutX="176.0" layoutY="40.0" opacity="0.4" strokeType="INSIDE" width="248.0">
          <fill>
-            <LinearGradient endX="0.7634069400630915" endY="1.0" startX="1.0" startY="0.48580440437004013">
+            <LinearGradient endX="0.8391167192429022" endY="0.8927444825037045" startX="1.0" startY="0.48580440437004013">
                <stops>
                   <Stop>
-                     <color><Color red="1.0" green="1.0" blue="1.0" opacity="0.8999999761581421" /></color>
+                     <color><Color red="1.0" green="1.0" blue="1.0" opacity="0.717258870601654" /></color>
                   </Stop>
                   <Stop offset="1.0">
-                     <color><Color red="1.0" green="1.0" blue="1.0" opacity="0.5" /></color>
+                     <color><Color red="1.0" green="1.0" blue="1.0" opacity="0.6421319842338562" /></color>
                   </Stop>
                </stops>
             </LinearGradient>

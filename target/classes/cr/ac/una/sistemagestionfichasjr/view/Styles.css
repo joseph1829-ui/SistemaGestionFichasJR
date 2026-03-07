@@ -3,7 +3,7 @@
     -fx-text-fill: white;
     -fx-font-family: "Segoe UI Semibold"; 
     -fx-font-size: 13px;
-    -fx-background-radius: 15;
+    -fx-background-radius: 12;
     -fx-cursor: hand;
     -fx-transition: 0.3s;
 }
@@ -16,7 +16,7 @@
 
 .text-field-login {
     -fx-opacity: 0.4;
-    -fx-background-radius: 15;
+    -fx-background-radius: 12;
     -fx-background-color: white;
     -fx-padding: 5 10;
 }
